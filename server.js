@@ -48,10 +48,10 @@ app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
 var applicationController = require("./controllers/applicationController.js");
-var burgerController = require("./controllers/burgerController.js");
+var burgersController = require("./controllers/burgersController.js");
 
 app.use("/", applicationController);
-app.use("/burger", burgerController);
+app.use("/burgers", burgersController);
 
 var port = process.env.PORT || 3000;
 app.listen(port);
